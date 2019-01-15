@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>com.kevinshu.retrofit2.plugins</id>
+  <name>Postman to Retrofit2</name>
+  <version>1.0</version>
+  <vendor email="yibinshu@gmail.com" url="yibinshu@gmail.com">KevinShu</vendor>
+
+  <description><![CDATA[
+      Converte postman collection to Retrofit2 java code<br>
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Retrofit2Generator" class="Retrofit2Generator" text="Retrofit2Generator"
+            description="Retrofit2 generate">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
