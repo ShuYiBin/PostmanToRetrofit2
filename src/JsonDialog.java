@@ -77,7 +77,7 @@ public class JsonDialog extends JDialog {
         String result = "";
         if(!item.getRequest().getMethod().equalsIgnoreCase("GET")) result += "@FormUrlEncoded\n";
         result += "    @" + item.getRequest().getMethod();
-        result += "(\"" + getApiPath(item.getRequest().getUrl(), false) + "\")";
+        result += "(\"" + getApiPath(item.getRequest().getUrl().trim(), false) + "\")";
         return result + "\n";
 
     }
@@ -89,7 +89,7 @@ public class JsonDialog extends JDialog {
                 uri = new URI(url);
                 String domain = uri.getHost();
                 url = url.replace("http://", "");
-                url = url.replace("http://", "");
+                url = url.replace("https://", "");
                 url = url.replace(domain, "");
                 return url;
             }
@@ -97,14 +97,14 @@ public class JsonDialog extends JDialog {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        return "";
+        return url;
     }
 
     private String getMethod(Collection.ItemBean item) {
         String result = "    Single<" + item.getName() + "Response> " + item.getName() + "(";
         if(item.getRequest().getMethod().equalsIgnoreCase("GET")) result = addQueryParams(item, result);
         else result = addFieldParams(item, result);
-        return result + "\n";
+        return result;
     }
 
     private String addFieldParams(Collection.ItemBean item, String result) {
