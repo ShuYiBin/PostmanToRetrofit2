@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
@@ -77,7 +78,11 @@ public class JsonDialog extends JDialog {
         String result = "";
         if(!item.getRequest().getMethod().equalsIgnoreCase("GET")) result += "@FormUrlEncoded\n";
         result += "    @" + item.getRequest().getMethod();
-        result += "(\"" + getApiPath(item.getRequest().getUrl().trim(), false) + "\")";
+        if(item.getRequest().getUrl() instanceof String) result += "(\"" + getApiPath((String)item.getRequest().getUrl(), false) + "\")";
+        else if(item.getRequest().getUrl() instanceof LinkedTreeMap) {
+            LinkedTreeMap url = (LinkedTreeMap)item.getRequest().getUrl();
+            result += "(\"" + getApiPath(url.get("raw").toString(), false) + "\")";
+        }
         return result + "\n";
 
     }
@@ -101,16 +106,30 @@ public class JsonDialog extends JDialog {
     }
 
     private String getMethod(Collection.ItemBean item) {
-        String result = "    Single<" + item.getName() + "Response> " + item.getName() + "(";
+        String result = "    Single<" + item.getName().trim() + "Response> " + item.getName().trim() + "(";
         if(item.getRequest().getMethod().equalsIgnoreCase("GET")) result = addQueryParams(item, result);
         else result = addFieldParams(item, result);
         return result;
     }
 
     private String addFieldParams(Collection.ItemBean item, String result) {
-        for(Collection.ItemBean.RequestBean.BodyBean.UrlencodedBean urlencoded : item.getRequest().getBody().getUrlencoded()) {
-            result += "@Field(\"" + urlencoded.getKey() + "\") " + "String " + urlencoded.getKey();
-            if(item.getRequest().getBody().getUrlencoded().indexOf(urlencoded)!=item.getRequest().getBody().getUrlencoded().size()-1) result += ", ";
+        //from Url-encoded
+        if(item.getRequest().getBody().getUrlencoded()!=null) {
+            for (Collection.ItemBean.RequestBean.BodyBean.UrlencodedBean urlencoded : item.getRequest().getBody().getUrlencoded()) {
+                result += "@Field(\"" + urlencoded.getKey() + "\") " + "String " + urlencoded.getKey();
+                if (item.getRequest().getBody().getUrlencoded().indexOf(urlencoded) != item.getRequest().getBody().getUrlencoded().size() - 1)
+                    result += ", ";
+            }
+            return result + ");";
+        }
+        //from form-data
+        if(item.getRequest().getBody().getFormdata()!=null) {
+            for (Collection.ItemBean.RequestBean.BodyBean.FormdataBean formdata : item.getRequest().getBody().getFormdata()) {
+                result += "@Field(\"" + formdata.getKey() + "\") " + "String " + formdata.getKey();
+                if (item.getRequest().getBody().getFormdata().indexOf(formdata) != item.getRequest().getBody().getFormdata().size() - 1)
+                    result += ", ";
+            }
+            return result + ");";
         }
         return result+");";
     }

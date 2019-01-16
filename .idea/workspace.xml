@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b31793-0b57-425b-98da-a49b110bc87c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Retrofit2Plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Retrofit2Plugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean$BodyBean$UrlencodedBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean$BodyBean$UrlencodedBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean$BodyBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean$BodyBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/Collection$ItemBean$RequestBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JsonDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonDialog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,32 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Retrofit2Generator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="57" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JsonDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -61,10 +46,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Item.java" />
-        <option value="$PROJECT_DIR$/src/Collection.java" />
         <option value="$PROJECT_DIR$/src/JsonDialog.form" />
         <option value="$PROJECT_DIR$/src/Retrofit2Generator.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/Collection.java" />
         <option value="$PROJECT_DIR$/src/JsonDialog.java" />
       </list>
     </option>
@@ -112,12 +97,6 @@
               <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="JsonDialog" type="e9f4de52:FormNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -127,7 +106,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547543392778" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547621861163" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -175,6 +154,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
@@ -189,13 +177,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" visible="true" weight="0.4373057" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32953367" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32953367" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -206,6 +194,13 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+        <watch expression="url.get(&quot;raw&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
@@ -254,53 +249,45 @@
     <entry file="file://$PROJECT_DIR$/src/JsonDialog.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/gson-2.8.5.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="161" column="42" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="42" />
+        <state relative-caret-position="162">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="e#475#476#0" expanded="true" />
             <element signature="e#502#503#0" expanded="true" />
             <element signature="e#1047#1048#0" expanded="true" />
             <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
             <element signature="e#2381#2382#0" expanded="true" />
             <element signature="e#2423#2424#0" expanded="true" />
             <element signature="e#2746#2747#0" expanded="true" />
             <element signature="e#2789#2790#0" expanded="true" />
             <element signature="e#2839#2840#0" expanded="true" />
             <element signature="e#2887#2888#0" expanded="true" />
-            <element signature="e#3718#3719#0" expanded="true" />
-            <element signature="e#3769#3770#0" expanded="true" />
-            <element signature="e#3821#3822#0" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3940#3941#0" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4075#4076#0" expanded="true" />
-            <element signature="e#4143#4144#0" expanded="true" />
-            <element signature="e#4606#4607#0" expanded="true" />
-            <element signature="e#4664#4665#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4780#4781#0" expanded="true" />
-            <element signature="e#4828#4829#0" expanded="true" />
-            <element signature="e#4888#4889#0" expanded="true" />
-            <element signature="e#4946#4947#0" expanded="true" />
             <element signature="e#5012#5013#0" expanded="true" />
-            <element signature="e#5066#5067#0" expanded="true" />
-            <element signature="e#5132#5133#0" expanded="true" />
-            <element signature="e#5202#5203#0" expanded="true" />
-            <element signature="e#5280#5281#0" expanded="true" />
-            <element signature="e#5327#5328#0" expanded="true" />
-            <element signature="e#5386#5387#0" expanded="true" />
-            <element signature="e#5442#5443#0" expanded="true" />
-            <element signature="e#5506#5507#0" expanded="true" />
+            <element signature="e#5076#5077#0" expanded="true" />
+            <element signature="e#6286#6287#0" expanded="true" />
+            <element signature="e#6350#6351#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/src/JsonDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#5407#5408#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -314,10 +301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JsonDialog.java">
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

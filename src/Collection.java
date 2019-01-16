@@ -101,17 +101,17 @@ public class Collection {
         }
 
         public static class RequestBean {
-            private String url;
+            private Object url;
             private String method;
             private BodyBean body;
             private String description;
             private List<?> header;
 
-            public String getUrl() {
+            public Object getUrl() {
                 return url;
             }
 
-            public void setUrl(String url) {
+            public void setUrl(Object url) {
                 this.url = url;
             }
 
@@ -150,6 +150,7 @@ public class Collection {
             public static class BodyBean {
                 private String mode;
                 private List<UrlencodedBean> urlencoded;
+                private List<FormdataBean> formdata;
 
                 public String getMode() {
                     return mode;
@@ -165,6 +166,14 @@ public class Collection {
 
                 public void setUrlencoded(List<UrlencodedBean> urlencoded) {
                     this.urlencoded = urlencoded;
+                }
+
+                public List<FormdataBean> getFormdata() {
+                    return formdata;
+                }
+
+                public void setFormdata(List<FormdataBean> formdata) {
+                    this.formdata = formdata;
                 }
 
                 public static class UrlencodedBean {
@@ -195,6 +204,36 @@ public class Collection {
 
                     public void setDescription(String description) {
                         this.description = description;
+                    }
+
+                    public String getType() {
+                        return type;
+                    }
+
+                    public void setType(String type) {
+                        this.type = type;
+                    }
+                }
+
+                public static class FormdataBean {
+                    private String key;
+                    private String value;
+                    private String type;
+
+                    public String getKey() {
+                        return key;
+                    }
+
+                    public void setKey(String key) {
+                        this.key = key;
+                    }
+
+                    public String getValue() {
+                        return value;
+                    }
+
+                    public void setValue(String value) {
+                        this.value = value;
                     }
 
                     public String getType() {
