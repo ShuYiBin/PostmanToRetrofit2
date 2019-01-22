@@ -105,7 +105,7 @@ public class Collection {
             private String method;
             private BodyBean body;
             private String description;
-            private List<?> header;
+            private List<HeaderBean> header;
 
             public Object getUrl() {
                 return url;
@@ -139,11 +139,11 @@ public class Collection {
                 this.description = description;
             }
 
-            public List<?> getHeader() {
+            public List<HeaderBean> getHeader() {
                 return header;
             }
 
-            public void setHeader(List<?> header) {
+            public void setHeader(List<HeaderBean> header) {
                 this.header = header;
             }
 
@@ -243,6 +243,36 @@ public class Collection {
                     public void setType(String type) {
                         this.type = type;
                     }
+                }
+            }
+
+            public static class HeaderBean {
+                private String key;
+                private String value;
+                private String description;
+
+                public String getKey() {
+                    return key;
+                }
+
+                public void setKey(String key) {
+                    this.key = key;
+                }
+
+                public String getValue() {
+                    return value;
+                }
+
+                public void setValue(String value) {
+                    this.value = value;
+                }
+
+                public String getDescription() {
+                    return description;
+                }
+
+                public void setDescription(String description) {
+                    this.description = description;
                 }
             }
         }
