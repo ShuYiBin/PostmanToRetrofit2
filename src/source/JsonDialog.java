@@ -1,14 +1,10 @@
-import com.google.gson.Gson;
-import com.google.gson.internal.LinkedTreeMap;
-import com.intellij.openapi.command.WriteCommandAction;
+package source;
+
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 
 import javax.swing.*;
 import java.awt.event.*;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.List;
 
 public class JsonDialog extends JDialog {
     private JPanel contentPane;

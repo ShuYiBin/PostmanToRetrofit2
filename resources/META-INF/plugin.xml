@@ -23,7 +23,7 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="Retrofit2Generator" class="Retrofit2Generator" text="Retrofit2Generator"
+    <action id="Retrofit2Generator" class="source.Retrofit2Generator" text="Retrofit2Generator"
             description="Retrofit2 generate">
       <add-to-group group-id="GenerateGroup" anchor="last"/>
     </action>
