@@ -28,12 +28,12 @@ public class Model {
         return null;
     }
 
-    void generateRxJavaCode(List<Collection.ItemBean> items) {
+    void generateRxJavaCode(List<Collection.ItemBean> items, boolean addHeader) {
         for(Collection.ItemBean item : items) {
             int startOffset;
             if(items.indexOf(item) == 0) startOffset = mEditor.getDocument().getText().lastIndexOf("{")+1;
             else startOffset = mEditor.getDocument().getText().lastIndexOf(";")+1;
-            String header = getHeader(item);
+            String header = (addHeader)?getHeader(item):"";
             String annotation = getAnnotation(item);
             String method = getMethod(item);
             WriteCommandAction.runWriteCommandAction(mProject, ()-> mEditor.getDocument().insertString(startOffset, "\n\n" +header + annotation + method));
@@ -43,9 +43,12 @@ public class Model {
     private String getHeader(Collection.ItemBean item) {
         String result = "";
         if(item.getRequest().getHeader()!=null && item.getRequest().getHeader().size()>0) {
+            result = "    @Headers({";
             for(Collection.ItemBean.RequestBean.HeaderBean header : item.getRequest().getHeader()) {
-                result += "    @Headers(\"" + header.getKey() + ": " + header.getValue() + "\")\n";
+                result += "\"" + header.getKey() + ": " + header.getValue() + "\"";
+                if(item.getRequest().getHeader().indexOf(header) != item.getRequest().getHeader().size()-1) result += ", ";
             }
+            result += "})\n";
         }
         return result;
     }
