@@ -2,7 +2,6 @@ package source;
 
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
-import com.intellij.util.ui.CheckBox;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -12,7 +11,7 @@ public class JsonDialog extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JTextArea jsonTextArea;
-    private JCheckBox addHeaderCheckBox;
+    private JCheckBox dynamic_header;
 
     private Model mModel;
     public JsonDialog(Project project, Editor editor) {
@@ -39,7 +38,7 @@ public class JsonDialog extends JDialog {
 
     private void onOK() {
         Collection collection = mModel.parsePostman(jsonTextArea.getText());
-        if(collection!=null) mModel.generateRxJavaCode(collection.getItem(), addHeaderCheckBox.isSelected());
+        if(collection!=null) mModel.generateRxJavaCode(collection.getItem(), dynamic_header.isSelected());
 
         dispose();
     }
@@ -50,6 +49,6 @@ public class JsonDialog extends JDialog {
     }
 
     private void createUIComponents() {
-        addHeaderCheckBox = new JCheckBox();
+        dynamic_header = new JCheckBox();
     }
 }

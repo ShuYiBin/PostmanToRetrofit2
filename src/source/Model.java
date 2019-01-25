@@ -28,19 +28,19 @@ public class Model {
         return null;
     }
 
-    void generateRxJavaCode(List<Collection.ItemBean> items, boolean addHeader) {
+    void generateRxJavaCode(List<Collection.ItemBean> items, boolean isDynamicHeader) {
         for(Collection.ItemBean item : items) {
             int startOffset;
             if(items.indexOf(item) == 0) startOffset = mEditor.getDocument().getText().lastIndexOf("{")+1;
             else startOffset = mEditor.getDocument().getText().lastIndexOf(";")+1;
-            String header = (addHeader)?getHeader(item):"";
+            String header = (isDynamicHeader)? "" : getStaticHeader(item);
             String annotation = getAnnotation(item);
-            String method = getMethod(item);
+            String method = getMethod(item, isDynamicHeader);
             WriteCommandAction.runWriteCommandAction(mProject, ()-> mEditor.getDocument().insertString(startOffset, "\n\n" +header + annotation + method));
         }
     }
 
-    private String getHeader(Collection.ItemBean item) {
+    private String getStaticHeader(Collection.ItemBean item) {
         String result = "";
         if(item.getRequest().getHeader()!=null && item.getRequest().getHeader().size()>0) {
             result = "    @Headers({";
@@ -49,6 +49,16 @@ public class Model {
                 if(item.getRequest().getHeader().indexOf(header) != item.getRequest().getHeader().size()-1) result += ", ";
             }
             result += "})\n";
+        }
+        return result;
+    }
+
+    private String getDynamicHeader(Collection.ItemBean item) {
+        String result = "";
+        if(item.getRequest().getHeader()!=null && item.getRequest().getHeader().size() > 0) {
+            for(Collection.ItemBean.RequestBean.HeaderBean headerBean : item.getRequest().getHeader()) {
+                result += "@Header(\""+headerBean.getKey()+"\")" + "String " + headerBean.getKey() + ", ";
+            }
         }
         return result;
     }
@@ -84,8 +94,9 @@ public class Model {
         return url;
     }
 
-    private String getMethod(Collection.ItemBean item) {
+    private String getMethod(Collection.ItemBean item, boolean isDynamicHeader) {
         String result = "    Single<" + item.getName().trim() + "Response> " + item.getName().trim() + "(";
+        if(isDynamicHeader) result += getDynamicHeader(item);
         if(item.getRequest().getMethod().equalsIgnoreCase("GET")) result = addQueryParams(item, result);
         else result = addFieldParams(item, result);
         return result;
