@@ -57,7 +57,7 @@ public class Model {
         String result = "";
         if(item.getRequest().getHeader()!=null && item.getRequest().getHeader().size() > 0) {
             for(Collection.ItemBean.RequestBean.HeaderBean headerBean : item.getRequest().getHeader()) {
-                result += "@Header(\""+headerBean.getKey()+"\")" + "String " + headerBean.getKey() + ", ";
+                result += "@Header(\""+headerBean.getKey()+"\")" + "String " + headerBean.getKey().replaceAll("[^A-Za-z0-9()\\[\\]]", "") + ", ";
             }
         }
         return result;
