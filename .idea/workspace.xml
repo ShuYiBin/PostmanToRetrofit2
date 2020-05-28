@@ -4,9 +4,7 @@
     <list default="true" id="52b31793-0b57-425b-98da-a49b110bc87c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retrofit2Plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Retrofit2Plugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/source/JsonDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/source/JsonDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Retrofit2Plugin/source/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Retrofit2Plugin/source/Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/JsonDialog.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/JsonDialog.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Model.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,68 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/source/JsonDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-              <folding>
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1643#1644#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/source/Retrofit2Generator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/source/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="class#InfoBean#0;class#Collection#0" />
-                <element signature="class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-                <element signature="class#UrlencodedBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-                <element signature="class#FormdataBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-                <element signature="class#HeaderBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-                <element signature="e#6675#6676#0" expanded="true" />
-                <element signature="e#6725#6726#0" expanded="true" />
-                <element signature="e#6775#6776#0" expanded="true" />
-                <element signature="e#6829#6830#0" expanded="true" />
-                <element signature="e#6873#6874#0" expanded="true" />
-                <element signature="e#6925#6926#0" expanded="true" />
-                <element signature="e#6979#6980#0" expanded="true" />
-                <element signature="e#7037#7038#0" expanded="true" />
-                <element signature="e#7087#7088#0" expanded="true" />
-                <element signature="e#7145#7146#0" expanded="true" />
-                <element signature="e#7211#7212#0" expanded="true" />
-                <element signature="e#7281#7282#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/source/Model.java">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5550#5551#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -94,6 +35,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>POST</find>
+      <find>Post</find>
+      <find>Sing</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -103,7 +51,6 @@
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/JsonDialog.form" />
         <option value="$PROJECT_DIR$/src/Retrofit2Generator.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/JsonDialog.java" />
         <option value="$PROJECT_DIR$/src/Collection.java" />
         <option value="$PROJECT_DIR$/src/Model.java" />
@@ -111,6 +58,7 @@
         <option value="$PROJECT_DIR$/src/source/JsonDialog.form" />
         <option value="$PROJECT_DIR$/src/source/Retrofit2Generator.java" />
         <option value="$PROJECT_DIR$/src/source/Model.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -133,7 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,49 +88,22 @@
               <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Retrofit2Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Retrofit2Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="JsonDialog" type="e9f4de52:FormNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548817222144" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590635816775" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/source" />
     </key>
   </component>
@@ -245,7 +165,7 @@
     <frame x="1920" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -254,7 +174,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32953367" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18756476" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.18756476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,22 +213,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <folding>
-            <element signature="e#0#1898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Retrofit2Plugin/JsonDialog.class" />
+    <entry file="file://$PROJECT_DIR$/src/Item.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -319,13 +225,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Retrofit2Plugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/gson-2.8.5.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -333,41 +232,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="94" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/source/JsonDialog.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/source/Collection.java">
+    <entry file="file://$PROJECT_DIR$/src/source/JsonDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/source/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
           <folding>
-            <element signature="class#InfoBean#0;class#Collection#0" />
-            <element signature="class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-            <element signature="class#UrlencodedBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-            <element signature="class#FormdataBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-            <element signature="class#HeaderBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
-            <element signature="e#6675#6676#0" expanded="true" />
-            <element signature="e#6725#6726#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
-            <element signature="e#6829#6830#0" expanded="true" />
-            <element signature="e#6873#6874#0" expanded="true" />
-            <element signature="e#6925#6926#0" expanded="true" />
-            <element signature="e#6979#6980#0" expanded="true" />
-            <element signature="e#7037#7038#0" expanded="true" />
-            <element signature="e#7087#7088#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7211#7212#0" expanded="true" />
-            <element signature="e#7281#7282#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5516#5517#0" expanded="true" />
+            <element signature="e#5550#5551#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/source/Retrofit2Generator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -379,25 +270,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/source/JsonDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/source/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
+            <element signature="class#InfoBean#0;class#Collection#0" />
+            <element signature="class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
+            <element signature="class#UrlencodedBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
+            <element signature="class#FormdataBean#0;class#BodyBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
+            <element signature="class#HeaderBean#0;class#RequestBean#0;class#ItemBean#0;class#Collection#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/source/Model.java">
+    <entry file="file://$PROJECT_DIR$/ApiSample.postman_collection.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Retrofit2Plugin.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5550#5551#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>

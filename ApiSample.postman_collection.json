@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "cfd77d5f-0b6d-4d20-9877-f4920fdd15fa",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetApi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.example/GetApi",
+					"protocol": "https",
+					"host": [
+						"api",
+						"example"
+					],
+					"path": [
+						"GetApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostApi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "account",
+							"value": "acc",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pwd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.example/PostApi",
+					"protocol": "https",
+					"host": [
+						"api",
+						"example"
+					],
+					"path": [
+						"PostApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutApi",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.example/PutApi",
+					"protocol": "https",
+					"host": [
+						"api",
+						"example"
+					],
+					"path": [
+						"PutApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteApi",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.example/DeleteApi",
+					"protocol": "https",
+					"host": [
+						"api",
+						"example"
+					],
+					"path": [
+						"DeleteApi"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

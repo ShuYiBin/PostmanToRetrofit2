@@ -95,7 +95,7 @@ public class Model {
     }
 
     private String getMethod(Collection.ItemBean item, boolean isDynamicHeader) {
-        String result = "    Single<" + item.getName().trim() + "Response> " + item.getName().trim() + "(";
+        String result = "    Single<Response<" + item.getName().trim() + "Response>> " + item.getName().trim() + "(";
         if(isDynamicHeader) result += getDynamicHeader(item);
         if(item.getRequest().getMethod().equalsIgnoreCase("GET")) result = addQueryParams(item, result);
         else result = addFieldParams(item, result);
